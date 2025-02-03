@@ -1,0 +1,48 @@
+body {
+    background-color: pink;
+}
+
+h1 {
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+#heart {
+    width: 300px;
+    height: 300px;
+    margin: -75px auto;
+    display: block;
+}
+
+.button-container {
+    display: block;
+    justify-content: space-evenly; /* Evenly spaces buttons across the screen */
+    align-items: center;
+    width: 100%; /* Full width to push buttons apart */
+    position: absolute;
+    bottom: 50px; /* Adjust this to move buttons higher/lower */
+    left: 0;
+}
+
+#yes, #no {
+    margin-top: 100px;
+    font-weight: 800;
+    font-size: x-large;
+    height: 100px;
+    width: 250px;
+    border: none;
+    cursor: pointer;
+}
+
+#yes {
+    background-color: green;
+    color: white;
+    margin-left: 200px;
+}
+
+#no {
+    background-color: red;
+    color: white;
+    margin-left: 500px;
+}
