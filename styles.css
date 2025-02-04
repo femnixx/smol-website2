@@ -8,6 +8,7 @@ h1 {
     justify-content: center;
     color: red;
 }
+
 #heart {
     width: 300px;
     height: 300px;
@@ -15,34 +16,37 @@ h1 {
     display: block;
 }
 
-.button-container {
-    display: block;
-    justify-content: space-evenly; /* Evenly spaces buttons across the screen */
-    align-items: center;
-    width: 100%; /* Full width to push buttons apart */
+.button #yes,
+.button #no {
     position: absolute;
-    bottom: 50px; /* Adjust this to move buttons higher/lower */
-    left: 0;
-}
-
-#yes, #no {
-    margin-top: 100px;
-    font-weight: 800;
-    font-size: x-large;
-    height: 100px;
-    width: 250px;
     border: none;
+    padding: 60px 65px;
+    margin-top: 100px;
+    font-weight: 1000;
+    font-size: x-large;
+    color: white;
     cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Smooth transition for hover effect */
 }
 
-#yes {
+.button #yes {
     background-color: green;
-    color: white;
-    margin-left: 200px;
+    bottom: 200px;
+    left: 150px;
+    width: 350px;
 }
 
-#no {
+.button #yes:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.button #no {
     background-color: red;
-    color: white;
-    margin-left: 500px;
+    bottom: 200px;
+    right: 150px;
+    width: 350px;
+}
+
+.button #no:hover {
+    transform: scale(1.1); /* Scale up on hover */
 }

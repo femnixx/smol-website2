@@ -11,8 +11,10 @@ noButton.addEventListener("click", function () {
 
     let currentWidth = parseInt(yesButton.style.width, 10);
     if (isNaN(currentWidth)) {
-        currentWidth = 250;
+        currentWidth = 350;
     }
+
+    noButton.style.width = (currentWidth-20) + "px";
     yesButton.style.width = (currentWidth+200) + "px";
     yesButton.style.height = (currentWidth+20) + "px";
 
